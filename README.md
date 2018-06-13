@@ -7,7 +7,15 @@ Scripts for taking care of cats.
 Cron scripts for alerting users in rotations to feed the cats.
 Allows rotating on-call and sending reminders to on-call.
 
-Set up as follows:
+Fill `./users.txt` in this directory with emails in the following format:
+
+```
+User1 <some@email.com>
+User2 <another@email.com>
+User3 <one_more@email.com>
+```
+
+Then set up cron as follows:
 
 ```
 # Reminders at 9:50 am and 9:50 pm.
